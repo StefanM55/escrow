@@ -121,7 +121,7 @@ describe("escrow", async () => {
       .accounts({ ...accounts })
       .signers([alice])
       .rpc();
-
+    console.log(transactionSignature);
     await confirmTransaction(connection, transactionSignature);
 
     // Check our vault contains the tokens offered
